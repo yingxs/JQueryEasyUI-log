@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+
+<input id="cc" style="width:200px" />
+</body>
+
+<script type="text/javascript" src="/js/jquery.min.js" ></script>
+<script type="text/javascript" src="/js/jquery.easyui.min.js" ></script>
+<script>
+
+    $('#cc').combobox({
+            url: "http://www.baidu.com",
+            required: true,
+            valueField: 'id',
+            textField: 'text'
+    });
+</script>
+</html>
