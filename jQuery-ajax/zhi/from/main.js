@@ -25,7 +25,12 @@ $(function(){
 
 	$('#reg').buttonset();
 	$('#date').datepicker();
-	$('#reg input[title]').tooltip();
+	//$('#reg input[title]').tooltip();
+	$('#user').tooltip({
+		position:{
+			my : 'left bottom'
+		}
+	});
 
 
 
