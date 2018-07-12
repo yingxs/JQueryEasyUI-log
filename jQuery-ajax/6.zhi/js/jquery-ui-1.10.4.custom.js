@@ -15006,7 +15006,7 @@ $.effects.effect.transfer = function( o, done ) {
 };
 
 })(jQuery);
-/*
+
 jQuery(function($){
 	$.datepicker.regional['zh-CN'] = {
 		closeText: '关闭',
@@ -15028,4 +15028,4 @@ jQuery(function($){
 		yearSuffix: '年'};
 	$.datepicker.setDefaults($.datepicker.regional['zh-CN']);
 });
-*/
+
