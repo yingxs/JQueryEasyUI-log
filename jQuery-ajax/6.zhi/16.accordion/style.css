@@ -1,0 +1,173 @@
+body{
+    margin:40px 0 0 0;
+    padding:0;
+    font-size: 12px;
+    font-family: 宋体;
+    background: #fff;
+}
+/*
+更改jquery主题弹窗标题背景
+*/
+.ui-widget-header{
+    background: #f5f5f5;
+}
+/*工具提示的文本颜色*/
+.ui-tooltip{
+    color:#666;
+}
+
+#header{
+    width: 100%;
+    height: 40px;
+    background: #f2f2f2;
+    position: absolute;
+    top:0;
+}
+
+#header .header_main{
+    width: 1000px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+#header .header_main h1{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: #666;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    padding:  0 10px;
+}
+#header .header_search{
+    padding: 6px 0 0 0 ;
+    float: left;
+}
+#header .header_search .search{
+    width: 300px;
+    height: 24px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #666;
+    font-size: 14px;
+
+
+}
+
+#header .header_button{
+    padding: 5px;
+    float: left;
+}
+#header .header_member{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    color: #555;
+    font-size: 14px;
+}
+#header .header_member a{
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+#reg,#login {
+    padding: 15px 0 0 15px;
+}
+
+#reg p,#login p{
+
+    margin: 10px 0;
+    padding:0;
+}
+
+#reg p label ,#login p label {
+    color: #666;
+}
+
+#reg .star,#login .star{
+    color: maroon;
+}
+
+#reg .succ,#login .succ{
+    display: inline-block;
+    width: 30px;
+    background: url(ok.svg) no-repeat ;
+}
+
+#reg ol,#login ol{
+    margin: 0;
+    padding: 0 0 0 20px;
+    color: maroon;
+}
+
+#reg ol li,#loading ol li{
+    height: 20px;
+}
+
+
+#reg .text,#login .text{
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background: #fff;
+    width: 200px;
+    height: 25px;
+    color: #666;
+    line-height: 25px;
+    text-indent: 5px;
+    font-size: 13px;
+}
+
+
+
+#loading{
+    background: url(loading.gif) no-repeat 20px center;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-indent: 40px;
+    color: #666;
+}
+
+#expires{
+
+    margin:0 2px 0 160px;
+}
+
+#main{
+    width: 800px;
+    margin: 50px auto;
+}
+#main .main_left{
+    width: 580px;
+    float: left;
+}
+#main .main_right{
+    width: 200px;
+    float: right;
+}
+
+/*去掉大的div边框*/
+#tabs{
+    border: none;
+}
+
+/*内容区边框*/
+#tab1,#tab2,#tab3{
+    border: 1px solid #ccc;
+    border-top: none;
+    position: relative;
+    top: -2px;
+}
+/*远程加载时内容区边框*/
+#ui-tabs-1,#ui-tabs-2,#ui-tabs-3{
+    border: 1px solid #ccc;
+    border-top: none;
+    position: relative;
+    top: -2px;
+}
+
+#accordion {
+
+}
