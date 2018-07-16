@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><script>window.location.href="error.html"</script><![endif]-->
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>知问前端</title>
+    <!--引入jquery.js文件-->
+    <script type="text/javascript" src="../js/jquery-1.10.2.js" ></script>
+    <!--引入jquery-ui.js文件-->
+    <script type="text/javascript" src="../js/jquery-ui-1.10.4.custom.js" ></script>
+    <!--引入数据验证插件validate.js文件-->
+    <script type="text/javascript" src="../js/jquery.validate.js" ></script>
+    <!--引入ajax插件form.js文件-->
+    <script type="text/javascript" src="../js/jquery.form.js" ></script>
+    <!--引入ajax插件cookie.js文件-->
+    <script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+
+    <script type="text/javascript" src="main.js" ></script>
+
+    <!--引入jqueryUI的CSS文件-->
+    <link rel="stylesheet" href="../css/base/jquery-ui-1.10.4.custom.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="header">
+        <div class="header_main">
+            <h1>知问</h1>
+            <div class="header_search">
+                <input type="text" name="search" class="search" />
+            </div>
+            <div class="header_button">
+                <input type="button" value="查询" id="search_button" />
+                <input type="button" value="查询" id="question_button" />
+            </div>
+            <div class="header_member">
+                <a href="javascript:void(0)" id="reg_a">注册</a>
+                <a href="javascript:void(0)" id="member">用户</a>
+                |
+                <a href="javascript:void(0)" id="login_a">登录</a>
+                <a href="javascript:void(0)" id="logout">退出</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="main_left">
+            <div id="tabs">
+                <ul>
+                    <li><a href="tab1.html">tabl</a> </li>
+                    <li><a href="tab2.html">tab2</a> </li>
+                    <li><a href="tab3.html">tab3</a> </li>
+                </ul>
+                <!--
+                <div id="tab1">tab1-content</div>
+                <div id="tab2">tab2-content</div>
+                <div id="tab3">tab3-content</div>
+                -->
+            </div>
+        </div>
+        <div class="main_right">
+            <div id="accordion">
+                <h1>菜单1</h1>
+                <div>内容1</div>
+                <h1>菜单2</h1>
+                <div>内容1</div>
+                <h1>菜单3</h1>
+                <div>内容3</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <form id="reg" action="123.html" title="会员注册" >
+        <ol class="reg_error"> </ol>
+        <p>
+            <label for="user">账号：</label>
+            <input type="text" name="user" class="text" id="user" />
+            <span class="star" >*</span>
+        </p>
+        <p>
+            <label for="pass">密码：</label>
+            <input type="password" name="pass" class="text" id="pass"  />
+            <span class="star" >*</span>
+        </p>
+        <p>
+            <label for="email">邮箱：</label>
+            <input type="text" name="email" class="text" id="email" />
+            <span class="star" >*</span>
+        </p>
+
+        <p>
+            <label for="email">性别：</label>
+            <input type="radio" name="sex" value="male" id="male" checked="checked"> <label for="male">男</label> </input>
+            <input type="radio" name="sex" value="female" id="female"> <label for="female">女</label> </input>
+        </p>
+
+        <p>
+            <label for="date">生日：</label>
+            <input type="text" name="date" readonly="readonly" class="text" id="date" />
+        </p>
+
+
+    </form>
+
+    <form id="login" title="会员登陆">
+        <ol class="login_error"> </ol>
+        <p>
+            <label for="user">账号：</label>
+            <input type="text" name="user" class="text" id="login_user" />
+            <span class="star" >*</span>
+        </p>
+        <p>
+            <label for="pass">密码：</label>
+            <input type="password" name="pass" class="text" id="login_pass"  />
+            <span class="star" >*</span>
+        </p>
+        <p>
+            <input type="checkbox" name="expires" id="expires" checked="checked" />
+            <label for="expires" >七天免登陆</label>
+        </p>
+    </form>
+
+
+    <form id="question" title="提问">
+        <p>
+            <label for="title">标题：</label>
+            <input type="text" name="title" style="width: 390px" class="text" id="title" />
+        </p>
+        <p>
+            <!-- 加载编辑器的容器 -->
+            <script id="container" name="content" type="text/plain">这里写你的初始化内容</script>
+            <!-- 配置文件 -->
+            <script type="text/javascript" src="../ueditor/ueditor.config.js" ></script>
+            <!-- 编辑器源码文件 -->
+            <script type="text/javascript" src="../ueditor/ueditor.all.js" ></script>
+            <!-- 实例化编辑器 -->
+            <script type="text/javascript">
+                var ue = UE.getEditor('container');
+            </script>
+
+        </p>
+
+    </form>
+
+
+
+
+
+<div id="loading">数据交互中...</div>
+<div id="error">请登录后再操作...</div>
+
+</body>
+</html>
