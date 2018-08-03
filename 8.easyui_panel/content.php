@@ -1,6 +1,6 @@
 <?php
 
-    sleep(3);
-    echo 123123;
+    //sleep(3);
+    echo "abc";
 
 ?>
